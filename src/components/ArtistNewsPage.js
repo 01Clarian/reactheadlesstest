@@ -23,7 +23,7 @@ export class ArtistNewsPage extends Component {
 
         return (
             <Fragment>
-                <Link to='/'>Go Back</Link>
+                <Link to='/reactheadlesstest/'>Go Back</Link>
                 <hr/>
                 <h1>{artistnews.title.rendered}</h1>
                 <div dangerouslySetInnerHTML={{__html:artistnews.content.rendered}}></div>

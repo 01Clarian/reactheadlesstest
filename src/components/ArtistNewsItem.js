@@ -35,7 +35,7 @@ componentDidMount() {
             <img style={{width:'50%'}} src={imgUrl} alt={title.rendered} />
             <div dangerouslySetInnerHTML={{__html: excerpt.rendered}} 
             />
-            <Link to={`/artistnews/${id}`}> More Info</Link>        
+            <Link to={`/reactheadlesstest/artistnews/${id}`}> More Info</Link>        
            
             </div>
         )

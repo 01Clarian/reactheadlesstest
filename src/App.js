@@ -7,8 +7,8 @@ function App() {
   return (
     <Router>
     <Fragment>
-      <Route exact path="/" component={ArtistNews} />
-      <Route exact path="/artistnews/:id" component={ArtistNewsPage} />
+      <Route exact path="/reactheadlesstest/" component={ArtistNews} />
+      <Route exact path="/reactheadlesstest/artistnews/:id" component={ArtistNewsPage} />
     </Fragment>
     </Router>
   );
