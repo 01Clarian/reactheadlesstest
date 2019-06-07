@@ -16,7 +16,7 @@ export class ArtistNewsItem extends Component {
 
 componentDidMount() {
     const { featured_media} = this.props.artistnews;
-    const getImageUrl = axios.get(`http://dev-secondpatheontest.pantheonsite.io/wp-json/wp/v2/media/${featured_media}`);
+    const getImageUrl = axios.get(`https://dev-secondpatheontest.pantheonsite.io/wp-json/wp/v2/media/${featured_media}`);
     Promise.all([getImageUrl]).then(res => {
         this.setState({
           imgUrl: res[0].data.media_details.sizes.full.source_url,

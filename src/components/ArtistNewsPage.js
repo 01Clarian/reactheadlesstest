@@ -9,7 +9,7 @@ export class ArtistNewsPage extends Component {
     }
 
     componentDidMount() {
-        axios.get(`http://dev-secondpatheontest.pantheonsite.io/wp-json/wp/v2/artist_news/${this.props.match.params.id}`)
+        axios.get(`https://dev-secondpatheontest.pantheonsite.io/wp-json/wp/v2/artist_news/${this.props.match.params.id}`)
         .then(res => this.setState({
             artistnews: res.data,
             isLoaded: true

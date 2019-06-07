@@ -9,7 +9,7 @@ state = {
 }
 
 componentDidMount() {
-    axios.get('http://dev-secondpatheontest.pantheonsite.io/wp-json/wp/v2/artist_news')
+    axios.get('https://dev-secondpatheontest.pantheonsite.io/wp-json/wp/v2/artist_news')
     .then(res => this.setState({
         artistnews: res.data,
         isLoaded: true
